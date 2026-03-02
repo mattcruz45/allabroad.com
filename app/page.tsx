@@ -48,11 +48,11 @@ export default function LandingPage() {
       <footer className="py-10 text-center text-sm text-zinc-500 border-t border-zinc-900 mt-20">
         <div className="flex justify-center gap-6 mb-4">
           <a 
-            href="mailto:roughterrainco@gmail.com" 
-            className="hover:text-white transition-colors cursor-pointer"
-          >
-            Support
-          </a>
+  href="mailto:support@allabroad.com?subject=Support%20Request%3A%20AllAbroad%20App&body=Hi%20AllAbroad%20Team%2C%0A%0AI%20have%20a%20question%20regarding..." 
+  className="hover:text-white transition-colors cursor-pointer"
+>
+  Support
+</a>
           <Link href="/terms" className="hover:text-white transition">Terms</Link>
           <Link href="/privacypolicy" className="hover:text-white transition">Privacy Policy</Link>
         </div>
