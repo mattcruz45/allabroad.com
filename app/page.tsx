@@ -47,6 +47,12 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="py-10 text-center text-sm text-zinc-500 border-t border-zinc-900 mt-20">
         <div className="flex justify-center gap-6 mb-4">
+          <a 
+            href="mailto:roughterrainco@gmail.com" 
+            className="hover:text-white transition-colors cursor-pointer"
+          >
+            Support
+          </a>
           <Link href="/terms" className="hover:text-white transition">Terms</Link>
           <Link href="/privacypolicy" className="hover:text-white transition">Privacy Policy</Link>
         </div>
