@@ -1,65 +1,45 @@
-import Image from "next/image";
+import Link from 'next/link';
 
-export default function Home() {
+export default function LandingPage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="min-h-screen bg-white text-slate-900">
+      {/* Navigation */}
+      <nav className="flex justify-between p-6 max-w-5xl mx-auto">
+        <span className="font-bold text-xl tracking-tight">AppLogo</span>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="flex flex-col items-center text-center px-6 py-20 max-w-4xl mx-auto">
+        <h1 className="text-5xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+          Connecting students studying abroad.
+        </h1>
+        <p className="text-xl text-slate-600 mb-10 max-w-2xl">
+          A short, punchy description of what your Expo app does and why people should care.
+        </p>
+
+        <div className="flex gap-4 mb-16">
+          <button className="bg-black text-white px-8 py-4 rounded-full font-semibold hover:opacity-80 transition">
+            App Store
+          </button>
+          <button className="border-2 border-slate-200 px-8 py-4 rounded-full font-semibold hover:bg-slate-50 transition">
+            Google Play
+          </button>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* Placeholder for App Screenshot */}
+        <div className="w-full max-w-md aspect-[9/19] bg-slate-100 rounded-[3rem] border-8 border-slate-900 shadow-2xl mx-auto overflow-hidden">
+           <div className="flex items-center justify-center h-full text-slate-400">App Screenshot Here</div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-10 text-center text-sm text-slate-500">
+        <div className="flex justify-center gap-6 mb-4">
+          <Link href="/terms" className="hover:underline">Terms</Link>
+          <Link href="/privacypolicy" className="hover:underline">Privacy Policy</Link>
+        </div>
+        <p>© 2026 AllAbroad. All rights reserved.</p>
+      </footer>
+    </main>
   );
 }
