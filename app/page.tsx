@@ -74,7 +74,7 @@ export default function LandingPage() {
       <footer className="relative z-40 py-20 text-center text-sm text-zinc-500 border-t border-white/5 bg-[#08080E] mt-[-80px] pt-[140px]">
         <div className="flex justify-center gap-10 mb-8 font-medium">
           <a 
-            href="mailto:roughterrainco@gmail.com?subject=Support%3A%20AllAbroad" 
+            href="mailto:allabroadapp@gmail.com?subject=Support%3A%20AllAbroad" 
             className="hover:text-[#6366F1] transition-colors"
           >
             Support
